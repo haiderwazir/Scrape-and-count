@@ -24,8 +24,8 @@ class Crawler
 				# for every internal link on the page, call main function recursively. Limitations applied.
 				work_q2 = Queue.new
 				@@total_links += 1
-			    counted_links.uniq.each{|url| work_q2 << url}
-			    workers_2 = (0..7).map do
+				counted_links.uniq.each{|url| work_q2 << url}
+				workers_2 = (0..7).map do
 				    Thread.new do
 				    	begin
 					        while link = work_q2.pop(true)
