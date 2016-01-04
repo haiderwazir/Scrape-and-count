@@ -7,6 +7,7 @@ require 'spec_helper'
 # 		end
 # 	end
 # end
+
 describe 'count inputs' do
 	context "with no input" do
 		it "should return 0" do
@@ -28,6 +29,11 @@ describe 'count inputs' do
 	end
 end
 
+describe 'open page' do
+	it "should return temp file" do
+		expect(Crawler.open_page("https://www.google.com").class).to eq Tempfile
+	end
+end
  
 describe "check_uri" do
 	context "with '/' as url" do
