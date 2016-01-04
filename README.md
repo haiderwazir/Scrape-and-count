@@ -2,6 +2,6 @@
 
 Ruby - 2.1.2
 
-Gems Required:
-  - gem 'nokogiri'
-  - gem 'rspec'
+Gems Installations Commands Required:
+  - gem install nokogiri
+  - gem install rspec
